@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Dejima;
+    src: url('dejima-mincho-r227.ttf');
+}
+
+#initial-scene {
+    -fx-font-family: 'Dejima'; 
+    -fx-font-size: 20pt;
+    -fx-background: black;
+}
+
+.root {
+    -fx-font-family: 'Dejima'; 
+    -fx-font-size: 14pt;
+    -fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+    -fx-control-inner-background:  rgb(50, 50, 50);
+    -fx-padding: 5;
+    -fx-accent: #0093ff;
+    -fx-focus-color: yellow;
+}
+
+.highlight {
+    -fx-effect: dropshadow(three-pass-box, red, 4, 4, 0, 0);
+}
+
+.tab-pane {
+    -fx-cursor: DEFAULT ;    
+}
+
+.tab {
+    -fx-text-fill: orange;
+    -fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #96b946;
+    /*-fx-text-fill: yellow;*/
+}
+
+.menu-bar {
+    -fx-text-fill: orange;
+    -fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+
+#top-menu-bar {
+    -fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+
+.tool-bar:horizontal {
+    -fx-background-color:
+        /*linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));*/
+        linear-gradient(to bottom, derive(-fx-base,-20%), derive(-fx-base,-10%), derive(-fx-base,+30%));
+}
+
+.context-menu {
+    -fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+    -fx-cursor: default;
+}
+
+.button {
+    -fx-text-fill: orange;
+    -fx-background-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-color: -fx-hover-base;
+}
+
+.close-button:hover {
+    -fx-background-color: red;
+}
+
+.extract-image-box-success {
+    -fx-text-fill: black;
+}
+
+.extract-image-box-success .content{
+    -fx-background-color: linear-gradient(to top, derive(#ffd266, 50%), #ffd266);;
+}
+
+.extract-image-box-failure {
+    -fx-text-fill: black;
+}
+
+.extract-image-box-failure .content{
+    -fx-background-color: linear-gradient(to top, derive(#b3e6b3, 70%), #b3e6b3);;
+}
+
+.extract-image-box-duplicate {
+    -fx-text-fill: black;
+}
+
+.extract-image-box-duplicate .content{
+    -fx-background-color: linear-gradient(to top, derive(#e64d4d, 70%), #e64d4d);;
+}
+
+
+.table-view {
+    -fx-text-fill: orange;
+    -fx-table-cell-border-color:derive(-fx-base,+10%);
+    -fx-table-header-border-color:derive(-fx-base,+20%);
+}
+
+.split-pane:horizontal > * > .split-pane-divider {
+    -fx-text-fill: orange;
+    -fx-border-color: transparent -fx-base transparent -fx-base;
+    -fx-background-color: transparent, derive(-fx-base,20%);
+    -fx-background-insets: 0, 0 1 0 1;
+}
+
+.separator-label {
+    -fx-text-fill: orange;
+}
+
+.analyze-status {
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: blue;
+}
+
+.webkit-text-field {
+    -fx-text-fill: orange;
+
+}
+
+.text-field .scroll-bar , :horizontal .thumb , :vertical .thumb {
+    -fx-border-color: orange;
+}
+
+.dialog {
+    -fx-background: black;
+}
+
+.mylistview{
+    -fx-background-color: white;
+    -fx-text-fill: orange;
+}
+
+.mylistview .scroll-bar:horizontal ,
+.mylistview  .scroll-bar:vertical {
+    /*-fx-background-color:transparent;*/
+
+}
+
+.mylistview .decrement-button {
+    -fx-background-color: gray;
+}
+
+.mylistview .scroll-bar:horizontal .track ,
+.mylistview .scroll-bar:vertical .track{
+}
+
+.mylistview .scroll-bar:horizontal .thumb,
+.mylistview .scroll-bar:vertical .thumb {
+    -fx-border-color: orange;
+}
